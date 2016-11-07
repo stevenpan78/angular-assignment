@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>showing and hiding div</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div ng-controller="myController">
+		<h2 ng-show="value">The blue dog ran around the room.</h2>
+		<h2 ng-hide="value">The red bat flew across the ocean.</h2>
+		<h2 ng-show="value">The green rat ran.</h2>
+		<h2 ng-show="value">Here is a mountain picture.<img ng-src="images/mountain.jpg"></h2>
+		<div ng-click="f()">Click Me!</div>
+		<div id="count">COUNT: {{ct}}</div>
+		<br>
+		<label>Your Number</label><input type="text" ng-model="num">
+		<h1 ng-show="isNumEven(num)">The number is even.</h1>
+		<h1 ng-show="!isNumEven(num)">The number is odd.</h1>
+	</div>
+ 	
+    <script src="js/script.js"></script>
+</body>
+
+</html>

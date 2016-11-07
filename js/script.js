@@ -1,0 +1,1 @@
+angular.module("myApp",[]).controller("myController",function(n){n.value=!1,n.ct=0,n.num,n.f=function(){n.value=!n.value,n.ct+=1},n.isNumEven=function(n){return n%2==0}});
